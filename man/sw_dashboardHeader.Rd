@@ -19,3 +19,6 @@ shiny object
 \description{
 sw_dashboardHeader
 }
+\references{
+https://github.com/rstudio/shinydashboard/issues/41
+}
