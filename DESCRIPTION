@@ -1,0 +1,16 @@
+Package: shinyware
+Title: Shinyware
+Version: 0.0.1
+Authors@R: person("Reinhard", "Simon", email = "rsimon64@gmail.com", role = c("aut", "cre"))
+Description: Provides some simplified framework for shiny applications.
+DRGBView: programming
+Depends: R (>= 3.4.4)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: shiny, shinydashboard, shinycards
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Remotes: rsimon64/shinycards
+RoxygenNote: 6.0.1
