@@ -4,14 +4,12 @@
 \alias{sw_dashboardHeader}
 \title{sw_dashboardHeader}
 \usage{
-sw_dashboardHeader(title = "Title", logo = NULL, add_tags = NULL)
+sw_dashboardHeader(title = "Title", logo = NULL)
 }
 \arguments{
 \item{title}{string; default: Title}
 
 \item{logo}{image name; image mast be in www subdirectory of app dir}
-
-\item{add_tags}{additional tags for header as tagList, e.g. notification}
 }
 \value{
 shiny object

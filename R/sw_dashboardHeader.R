@@ -31,16 +31,19 @@ dashboardHeader2 <- function(..., title = NULL, disable = FALSE, title.navbar=NU
 #'
 #' @param title string; default: Title
 #' @param logo image name; image mast be in www subdirectory of app dir
-#' @param add_tags additional tags for header as tagList, e.g. notification
+# @param add_tags additional tags for header as tagList, e.g. notification
 #' @references https://github.com/rstudio/shinydashboard/issues/41
 #' @return shiny object
 #' @export
 #'
-sw_dashboardHeader <- function(title = "Title", logo = NULL, add_tags = NULL) {
+sw_dashboardHeader <- function(title = "Title", logo = NULL) {
   title.navbar.html <- sw_title(title)
   logo <- shiny::img(src=logo, height = 45)
   
   dashboardHeader2(title = logo, title.navbar = title.navbar.html,
-                   add_tags
+                   shinydashboard::dropdownMenuOutput("taskMenu"),
+                   shinydashboard::dropdownMenuOutput("messageMenu"),
+                   shinydashboard::dropdownMenuOutput("notificationMenu")
+                   
   )
 }
